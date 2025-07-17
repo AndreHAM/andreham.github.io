@@ -44,4 +44,4 @@ For details on my work, see my [publications page](/publications/). I’m always
 
 Before moving to quantum sciences, I have worked with MEMS (micro-electromechanical systems) and neuroengineering. You can find my Msc Dissertation [here](https://repositorio.unicamp.br/Acervo/Detalhe/965393) (in portuguese).
 
-My [Erdős](https://mathscinet.ams.org/mathscinet/freetools/collab-dist) number is 4.
+My [Erdos](https://mathscinet.ams.org/mathscinet/freetools/collab-dist) number is 4.
