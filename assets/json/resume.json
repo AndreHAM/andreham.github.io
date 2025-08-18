@@ -80,7 +80,14 @@
       "courses": ""
     }
   ],
-  "awards": [
+  "awards and scholarships": [
+     {
+      "title": "PhD Scholarship",
+      "date": "2016 -- 2021",
+      "awarder": "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)",
+      "url": "",
+      "summary": "Merit-based scholarship offered by CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior) for graduate research"
+    },
     {
       "title": "Cândido Pinto de Melo Award - Honorable mention",
       "date": "Jan 2014",
@@ -244,3 +251,4 @@
     }
   ]
 }
+
