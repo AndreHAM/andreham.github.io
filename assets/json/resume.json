@@ -82,7 +82,7 @@
   ],
   "awards": [
      {
-      "title": "4-years PhD Scholarship",
+      "title": "PhD Scholarship",
       "date": "2016",
       "awarder": "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)",
       "url": "",
@@ -97,27 +97,27 @@
     },
     {
       "title": "Cândido Pinto de Melo Award - Honorable mention",
-      "date": "Jan 2014",
+      "date": "2014",
       "awarder": "Brazilian Society of Biomedical Engineering",
       "url": "",
       "summary": "The 'Cândido Pinto de Melo Award' is the highest scientific distinction awarded by the SBEB to students working in Biomedical Engineering."
     },
     {
-      "title": "2-years MsC Scholarship",
+      "title": "MsC Scholarship",
       "date": "2016",
       "awarder": "CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)",
       "url": "",
       "summary": "Merit-based scholarship offered by CNPq for graduate research"
     },
     {
-      "title": "1-year Undergraduate Scholarship",
+      "title": "Undergraduate Scholarship",
       "date": "2012",
       "awarder": "CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)",
       "url": "",
       "summary": "Merit-based scholarship offered by CNPq for undergraduate research"
     },
     {
-      "title": "1-year Undergraduate Scholarship",
+      "title": "Undergraduate Scholarship",
       "date": "2010",
       "awarder": "CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)",
       "url": "",
@@ -279,6 +279,7 @@
     }
   ]
 }
+
 
 
 
