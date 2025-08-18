@@ -80,10 +80,10 @@
       "courses": ""
     }
   ],
-  "awards and scholarships": [
+  "awards": [
      {
       "title": "PhD Scholarship",
-      "date": "2016 -- 2021",
+      "date": "2016",
       "awarder": "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)",
       "url": "",
       "summary": "Merit-based scholarship offered by CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior) for graduate research"
@@ -251,4 +251,5 @@
     }
   ]
 }
+
 
