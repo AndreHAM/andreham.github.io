@@ -226,6 +226,7 @@ plugins:
   - jekyll-twitter-plugin
   - jemoji
   - jekyll-seo-tag
+  - jekyll-google_search_console_verification_file
 
 # Sitemap settings
 defaults:
