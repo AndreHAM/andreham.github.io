@@ -82,8 +82,8 @@ openpanel_analytics: # your Openpanel analytics client ID (format: XXXXXXXX-XXXX
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
 google_site_verification: # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
-google_search_console:
-  verification_file_code: 629c6d507f6f8419
+#google_search_console:
+#  verification_file_code: 629c6d507f6f8419
 
 # -----------------------------------------------------------------------------
 # Blog
@@ -227,8 +227,8 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
-  - jekyll-seo-tag
-  - jekyll-google_search_console_verification_file
+ # - jekyll-seo-tag
+ # - jekyll-google_search_console_verification_file
 
 # Sitemap settings
 defaults:
