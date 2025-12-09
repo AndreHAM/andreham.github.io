@@ -24,8 +24,8 @@
   },
   "work": [
     {
-      "name": "International Centre for Theory of Quantum Technologies (ICTQT)",
-      "position": "Posdoctoral Researcher",
+      "name": "ICTQT-UG",
+      "position": "Independent Posdoctoral Researcher",
       "url": "https://ictqt.ug.edu.pl",
       "startDate": "2025",
       "endDate": "",
@@ -33,7 +33,7 @@
       "highlights": ["Research on quantum thermodynamics and quantum thermal devices in cQED platforms"]
     },
     {
-      "name": "International Centre for Theory of Quantum Technologies (ICTQT)",
+      "name": "ICTQT-UG",
       "position": "Posdoctoral Researcher",
       "url": "https://ictqt.ug.edu.pl",
       "startDate": "2022",
@@ -332,6 +332,7 @@
     }
   ]
 }
+
 
 
 
