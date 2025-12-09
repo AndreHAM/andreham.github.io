@@ -29,8 +29,8 @@
       "url": "https://ictqt.ug.edu.pl",
       "startDate": "2025",
       "endDate": "",
-      "summary": "Research on quantum thermodynamics and quantum thermal devices in cQED platforms",
-      "highlights": ["Principal Investigator of the Sonatina 9 research grant “Modular quantum thermal devices: integrating thermal functionalities"]
+      "summary": "Principal Investigator of the Sonatina 9 research grant “Modular quantum thermal devices: integrating thermal functionalities",
+      "highlights": ["Research on quantum thermodynamics and quantum thermal devices in cQED platforms"]
     },
     {
       "name": "International Centre for Theory of Quantum Technologies (ICTQT)",
@@ -39,7 +39,7 @@
       "startDate": "2022",
       "endDate": "2025",
       "summary": "Research on open quantum systems and quantum thermodynamics",
-      "highlights":
+      "highlights": ["Research on open quantum systems and quantum thermodynamics"]
     }
   ],
   "volunteer": [
@@ -332,6 +332,7 @@
     }
   ]
 }
+
 
 
 
