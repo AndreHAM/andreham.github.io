@@ -102,28 +102,28 @@
       "date": "2016",
       "awarder": "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)",
       "url": "",
-      "summary": "4 years merit-based scholarship"
+      "summary": "4 years scholarship"
     },
     {
       "title": "MsC grant",
       "date": "2013",
       "awarder": "CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)",
       "url": "",
-      "summary": "2 years merit-based scholarship"
+      "summary": "2 years scholarship"
     },
     {
       "title": "Undergraduate grant",
       "date": "2012",
       "awarder": "CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)",
       "url": "",
-      "summary": "1 year merit-based scholarship"
+      "summary": "1 year scholarship"
     },
     {
       "title": "Undergraduate grant",
       "date": "2010",
       "awarder": "CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)",
       "url": "",
-      "summary": "1 year merit-based scholarship"
+      "summary": "1 year scholarship"
     }
   ],
   "awards": [
@@ -237,7 +237,7 @@
       "level": "Masters",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Microfabrication"
+        "Microfabrication (basic cleam-room experience)"
       ]
     }
   ],
@@ -297,6 +297,7 @@
     }
   ]
 }
+
 
 
 
