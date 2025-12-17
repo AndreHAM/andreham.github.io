@@ -39,6 +39,8 @@ I am particularly passionate about:
      ● Open Quantum Systems
      ● Quantum Information
      ● Stochastic Thermodynamics
+     ● cQED platforms
+     
 
 My research explores the interplay between quantum information, thermodynamics, and open systems, aiming to uncover new fundamental limits and applications for emerging quantum technologies 2.0. For details on my work, see my [publications page](/publications/). I’m always open to discussions and collaborations—feel free to reach out!
 
