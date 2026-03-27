@@ -20,7 +20,7 @@ nav_order: 5
 
 
 
-
+<h2> teste </h2>
 {% assign teaching_items = site.teaching | sort: 'date' | reverse %}
 
 {% for item in teaching_items %}
@@ -28,7 +28,7 @@ nav_order: 5
   <p>{{ item.content }}</p>
 {% endfor %}
 
-
+<h2> teste2 </h2>
 {% if item.category == 'quantum' %}
   <span class="badge">{{ item.category }}</span>
 {% endif %}
