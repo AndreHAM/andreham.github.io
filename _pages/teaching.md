@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Teaching
+title: teaching
 permalink: /teaching/
-description: A growing collection of your cool projects.
+description: Different disciplines.
 nav: true
 nav_order: 4
 display_categories: [work, fun]
