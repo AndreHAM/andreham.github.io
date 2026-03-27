@@ -2,7 +2,7 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials.
+description: Course materials, schedules, and resources for classes taught.
 collection: teaching
 nav: true
 nav_order: 5
