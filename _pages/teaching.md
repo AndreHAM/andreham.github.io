@@ -1,8 +1,9 @@
 ---
-layout: page
+layout: book-shelf
 permalink: /teaching/
 title: teaching
 description: Materials.
+collection: teaching
 nav: true
 nav_order: 5
 ---
