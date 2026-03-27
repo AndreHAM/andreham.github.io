@@ -13,11 +13,8 @@ nav_order: 3
 
 <div class="publications">
 
-<h2>Ph.D. thesis</h2>
 
-{% bibliography -f thesis --group_by type %}
 
-<hr class="section-divider">
 
 <h2>preprints</h2>
 
@@ -25,12 +22,23 @@ nav_order: 3
 
 <hr class="section-divider">
 
+
+
+
 <h2>conference &amp; journal articles</h2>
 
 {% bibliography -f papers --group_by type %}
 
 <hr class="section-divider">
 
+
+
+
+<h2>Ph.D. thesis</h2>
+
+{% bibliography -f thesis --group_by type %}
+
+<hr class="section-divider">
 
 
 </div>
