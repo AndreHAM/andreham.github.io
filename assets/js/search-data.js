@@ -24,8 +24,8 @@ ninja.data = [{
             window.location.href = "/publications/";
           },
         },{id: "nav-teaching",
-          title: "teaching",
-          description: "Materials.",
+          title: "Teaching",
+          description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
@@ -38,6 +38,11 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
         },{id: "teaching-coherence-and-decoherence-in-superconducting-qubits",
+          title: 'Coherence and Decoherence in Superconducting Qubits',
+          description: "Introductory material for the Quantum Information Technology Master’s program (ICTQT)",
+          section: "Teaching",handler: () => {
+              window.location.href = "/teaching/coherence-decoherence/";
+            },},{id: "teaching-coherence-and-decoherence-in-superconducting-qubits",
           title: 'Coherence and Decoherence in Superconducting Qubits',
           description: "Introductory material for the Quantum Information Technology Master’s program (ICTQT)",
           section: "Teaching",handler: () => {
