@@ -5,7 +5,7 @@ description: Introductory material for the Quantum Information Technology Master
 img: assets/img/TransmonDesign.png
 year: 2025
 term: Winter
-category: work
+category: quantum
 related_publications: true
 permalink: /teaching/coherence-decoherence/
 ---
