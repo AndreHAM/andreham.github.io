@@ -27,3 +27,8 @@ nav_order: 5
   <h3>{{ item.title }}</h3>
   <p>{{ item.content }}</p>
 {% endfor %}
+
+
+{% if item.category == 'quantum' %}
+  <span class="badge">{{ item.category }}</span>
+{% endif %}
