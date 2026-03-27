@@ -17,3 +17,13 @@ nav_order: 5
   </li>
 {% endfor %}
 </ul>
+
+
+
+
+{% assign teaching_items = site.teaching | sort: 'date' | reverse %}
+
+{% for item in teaching_items %}
+  <h3>{{ item.title }}</h3>
+  <p>{{ item.content }}</p>
+{% endfor %}
