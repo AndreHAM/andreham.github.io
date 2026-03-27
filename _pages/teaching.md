@@ -2,13 +2,13 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for different courses.
+description: Materials.
 nav: true
 nav_order: 5
 ---
 
 
-# Courses
+<h2> Courses </h2>
 
 <ul>
 {% for course in site.courses %}
