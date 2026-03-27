@@ -65,7 +65,7 @@ nav_order: 5
 </div>
 
 
-#<h2> Courses </h2>
+<!--#<h2> Courses </h2>
 
 #<ul>
 #{% for course in site.courses %}
