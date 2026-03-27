@@ -7,6 +7,7 @@ year: 2025
 term: Winter
 category: work
 related_publications: true
+permalink: /teaching/coherence-decoherence/
 ---
 
 Every project has a beautiful feature showcase page.
