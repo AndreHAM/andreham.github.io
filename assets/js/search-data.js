@@ -41,11 +41,6 @@ ninja.data = [{
           title: 'project 1',
           description: "with background image",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
               window.location.href = "/projects/1_teaching/";
             },},{id: "projects-project-2",
           title: 'project 2',
@@ -82,11 +77,6 @@ ninja.data = [{
           description: "an other project with a background image and giscus comments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
-            },},{id: "projects-project-9",
-          title: 'project 9',
-          description: "another project with an image 🎉",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
             },},{id: "teaching-coherence-and-decoherence-in-superconducting-qubits",
           title: 'Coherence and Decoherence in Superconducting Qubits',
           description: "Introductory material for the Quantum Information Technology Master’s program (ICTQT)",
