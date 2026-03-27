@@ -4,9 +4,10 @@ title: Coherence and Decoherence in Superconducting Qubits
 description: Introductory material for the Quantum Information Technology Master’s program (ICTQT)
 img: assets/img/TransmonDesign.png
 year: 2025
-term: Winter
+term: Fall
 category: quantum
 related_publications: true
+course_id: course-id1 # This should be unique
 permalink: /teaching/coherence-decoherence/
 ---
 
