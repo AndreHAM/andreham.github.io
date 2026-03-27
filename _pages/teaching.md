@@ -8,12 +8,12 @@ nav_order: 5
 ---
 
 
-# Teaching
+# Courses
 
 <ul>
 {% for course in site.courses %}
   <li>
-    <a href="{{ course.url }}">{{ course.title }}</a>
+    <a href="{{ course.url }}">{{ Coherence and Decoherence in Superconducting Qubits }}</a>
   </li>
 {% endfor %}
 </ul>
