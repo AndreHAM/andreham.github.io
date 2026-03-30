@@ -42,5 +42,6 @@ $max-content-width: {{ site.max_width }};
 
 
 .badge {
-  background-color: #2c7be5;
+  background-color: #0076df;  /* your color */
+  color: white;               /* text color */
 }
