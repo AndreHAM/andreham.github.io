@@ -16,6 +16,14 @@ h1 {
 </style>
 
 
+<div class="row justify-content-sm-center">
+    <div class="col-sm mt-2 mt-md-0">
+        {% include figure.liquid path="assets/img/Curso2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Cool plots!
+</div>
 
     
     Year: 2025
