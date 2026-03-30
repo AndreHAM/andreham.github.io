@@ -39,7 +39,7 @@ ninja.data = [{
           },
         },{id: "projects-coherence-and-decoherence-in-superconducting-qubits",
           title: 'Coherence and Decoherence in Superconducting Qubits',
-          description: "Introductory material for the Quantum Information Technology Master’s program",
+          description: "Introductory material for the Quantum Information Technology (QIT) Master’s program",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_teaching/";
             },},{
