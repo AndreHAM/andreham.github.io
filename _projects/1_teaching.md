@@ -20,6 +20,10 @@ h1 {
     
     Year: 2025
     Term: Fall
+    Content:
+      Part 1   - Review of Quantum Mechanics
+      Part 2   - Basics of Open Quantum Systems
+      Part 3   -  Superconducting Qubits
     
 
 Notes can be found here.
