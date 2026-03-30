@@ -26,9 +26,6 @@ h1 {
 </div>
 
 
-
-{% include figure.liquid path="assets/img/Curso2.png"
-    %}
     
     Year: 2025
     Term: Fall
@@ -41,11 +38,12 @@ h1 {
 Notes can be found here.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm mt-4 mt-md-0">
-        {% include figure.liquid path="assets/img/Curso2.png" title="example image" class="img-fluid w-50 rounded z-depth-0" %}
+    <div class="col-sm mt-4 mt-md-0 text-center">
+        {% include figure.liquid path="assets/img/Curso2.png"
+           class="img-fluid rounded z-depth-0" %}
     </div>
 </div>
-<div class="caption">
+<div class="caption text-center">
     Cool plots!
 </div>
 
