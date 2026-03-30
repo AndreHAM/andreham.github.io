@@ -6,7 +6,7 @@ img: assets/img/TransmonDesign.png
 importance: 1
 year: 2025
 term: Fall
-category: [work, teaching]
+category: [work, ICTQT]
 related_publications: true
 ---
 
