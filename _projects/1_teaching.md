@@ -4,9 +4,16 @@ title: Coherence and Decoherence in Superconducting Qubits
 description: Introductory material for the Quantum Information Technology Master’s program
 img: assets/img/TransmonDesign.png
 importance: 1
-category: [work, ICTQT, 2025]
+category: [ICTQT, 2025]
 related_publications: true
 ---
+
+<style>
+h1 {
+  font-size: 1.8rem;
+}
+</style>
+
 
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
