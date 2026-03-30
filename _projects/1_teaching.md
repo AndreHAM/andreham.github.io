@@ -1,10 +1,12 @@
 ---
-layout: page
-title: project 1
-description: with background image
+layout: course
+title: Coherence and Decoherence in Superconducting Qubits
+description: Introductory material for the Quantum Information Technology Master’s program
 img: assets/img/TransmonDesign.png
 importance: 1
-category: work
+year: 2025
+term: Fall
+category: [work, teaching]
 related_publications: true
 ---
 
