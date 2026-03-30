@@ -11,7 +11,7 @@ related_publications: false
 <style>
 h1 {
   font-size: 1.8rem;
-  color: #b509ac;  /* change this */
+  color: #6f42c1;  /* change this */
 }
 </style>
 
