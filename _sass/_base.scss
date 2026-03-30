@@ -170,13 +170,13 @@ ul.task-list input[type="checkbox"] {
   background-color: var(--global-card-bg-color);
 
   .card-img {
-    width: 80%;
+    width: 70%;
     padding-top: 1.25rem;
   }
 
   .card-title {
     color: #b509ac;
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
 
   .card-body {
@@ -663,6 +663,7 @@ footer.sticky-bottom {
     &:hover {
       .card-title {
         color: var(--global-theme-color);
+        font-size: 0.5rem;
       }
     }
   }
