@@ -170,12 +170,13 @@ ul.task-list input[type="checkbox"] {
   background-color: var(--global-card-bg-color);
 
   .card-img {
-    width: 100%;
+    width: 80%;
     padding-top: 1.25rem;
   }
 
   .card-title {
-    color: var(--global-text-color);
+    color: #b509ac;
+    font-size: 2rem;
   }
 
   .card-body {
