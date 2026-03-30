@@ -28,7 +28,8 @@ $max-content-width: {{ site.max_width }};
 
 .card-img-top {
   height: 150px;
-  object-fit: cover;   /* crops nicely */
+  object-fit: contain;
+  background-color: white; /* avoids ugly gaps */
 }
 
 .card-body {
