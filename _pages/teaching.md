@@ -6,7 +6,7 @@ description: Teaching, courses and materials.
 nav: true
 nav_order: 4
 display_categories: [ICTQT]
-horizontal: false
+horizontal: true
 ---
 
 <!-- pages/projects.md -->
