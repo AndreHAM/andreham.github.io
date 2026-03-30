@@ -26,18 +26,3 @@ $max-content-width: {{ site.max_width }};
 
 
 
-.card-img-top {
-  height: 150px;
-  object-fit: contain;
-  background-color: white; /* avoids ugly gaps */
-}
-
-.card-body {
-  padding: 0.8rem;
-}
-
-
-.badge {
-  background-color: #b509ac;  /* your color */
-  color: #b509ac;               /* text color */
-}
