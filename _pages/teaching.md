@@ -2,7 +2,7 @@
 layout: page
 title: teaching
 permalink: /teaching/
-description: Different disciplines.
+description: Teaching, courses and materials.
 nav: true
 nav_order: 4
 display_categories: [work, fun]
