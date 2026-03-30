@@ -42,11 +42,6 @@ ninja.data = [{
           description: "Introductory material for the Quantum Information Technology Master’s program",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_teaching/";
-            },},{id: "teaching-coherence-and-decoherence-in-superconducting-qubits",
-          title: 'Coherence and Decoherence in Superconducting Qubits',
-          description: "Introductory material for the Quantum Information Technology Master’s program (ICTQT)",
-          section: "Teaching",handler: () => {
-              window.location.href = "/teaching/coherence-decoherence/";
             },},{
         id: 'social-email',
         title: 'email',
