@@ -37,9 +37,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+        },{id: "projects-coherence-and-decoherence-in-superconducting-qubits",
+          title: 'Coherence and Decoherence in Superconducting Qubits',
+          description: "Introductory material for the Quantum Information Technology Master’s program",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_teaching/";
             },},{id: "projects-project-3-with-very-long-name",
