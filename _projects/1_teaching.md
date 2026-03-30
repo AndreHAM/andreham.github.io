@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Coherence and Decoherence in Superconducting Qubits
-description: Introductory material for the Quantum Information Technology (QIT) Master’s program
+description: Course for the Quantum Information Technology (QIT) Master’s program
 img: assets/img/TransmonDesign.png
 importance: 1
 category: [ICTQT, 2025]
