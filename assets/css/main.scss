@@ -26,6 +26,15 @@ $max-content-width: {{ site.max_width }};
 
 
 
+.card-img-top {
+  height: 150px;
+  object-fit: cover;   /* crops nicely */
+}
+
+.card-body {
+  padding: 0.8rem;
+}
+
 .card-title {
   line-height: 1.2;
 }
