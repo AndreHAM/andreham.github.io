@@ -20,7 +20,7 @@ h1 {
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-0.5 mt-md-0 text-center">
         {% include figure.liquid path="assets/img/Curso.png"
-           class="img-fluid rounded z-depth-0" %}
+           class="img-fluid rounded z-depth-0" style="max-width: 400px;" %}
     </div>
 </div>
 <div class="caption text-center">
