@@ -17,15 +17,6 @@ h1 {
 
 
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm mt-1 mt-md-0 text-center">
-        {% include figure.liquid path="assets/img/Curso.png"
-           class="img-fluid rounded z-depth-0" style="max-width: 200px;" %}
-    </div>
-</div>
-<div class="caption text-center">
-    Surperconducting circuits!
-</div>
 
 
     
@@ -38,6 +29,17 @@ h1 {
 
 
 Notes can be found here.
+
+
+
+
+<div class="col-sm mt-1 mt-md-0 text-center">
+    {% include figure.liquid path="assets/img/Curso.png"
+           class="img-fluid rounded z-depth-0" style="max-width: 200px;" %}
+</div>
+<div class="caption text-center">
+    Surperconducting circuits!
+</div>
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-1 mt-md-0 text-center">
