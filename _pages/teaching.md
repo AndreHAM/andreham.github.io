@@ -2,7 +2,7 @@
 layout: page
 title: teaching
 permalink: /teaching/
-description: Teaching, courses and materials.
+description: Courses and materials.
 nav: true
 nav_order: 4
 display_categories: [ICTQT]
