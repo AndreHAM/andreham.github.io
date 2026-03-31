@@ -35,7 +35,7 @@ Notes can be found here.
 
 <div class="col-sm mt-1 mt-md-0 text-center">
     {% include figure.liquid path="assets/img/Curso.png"
-           class="img-fluid rounded z-depth-0" style="max-width: 100px;" %}
+           class="img-fluid rounded z-depth-0" style="max-width: 30px;" %}
 </div>
 <div class="caption text-center">
     Surperconducting circuits!
