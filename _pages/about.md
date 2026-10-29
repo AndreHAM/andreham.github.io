@@ -35,15 +35,7 @@ I am based at the [International Centre for Theory of Quantum Technologies](http
 
 ## Research
 
-Quantum energy storage, heat-flow control and local energetics are the main threads of my research. We proposed a Schmidt-decomposition approach that preserves energy additivity in interacting autonomous systems, including strong coupling.
-
-### Recent contributions
-
-- **Quantum batteries:** [Chiral squeezing (2026)](https://journals.aps.org/prl/abstract/10.1103/zg87-t4y5), [charge-preserving operations (2026)](https://journals.aps.org/prxenergy/abstract/10.1103/2jtp-jpkn), and [ergotropy protection (2025)](https://journals.aps.org/prxenergy/abstract/10.1103/bv4w-jr6q).
-- **Heat transport:** [Detuning and thermal-device functionality (2024)](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.109.064146).
-- **Foundations:** [Schmidt decomposition and local energetics (2022)](https://doi.org/10.3390/e24111645).
-
-Explore my [research](/research/) and [publications](/publications/).
+My research focuses on quantum energy storage, heat-flow control and local energetics. I combine analytical models and numerical simulations to explore how interactions and the environment shape quantum thermal devices. Explore my [research directions and contributions](/research/).
 
 ## Collaborate
 
