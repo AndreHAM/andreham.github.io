@@ -8,6 +8,7 @@ nav_order: 3
 ---
 
 {% assign catalog = site.data.publication_catalog %}
+
 <div class="publication-page" id="publication-index">
   <header class="pub-header">
     <p class="pub-eyebrow">Research output</p>

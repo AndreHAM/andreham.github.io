@@ -9,6 +9,7 @@ nav_order: 4
 ---
 
 {% assign courses = site.projects | where: 'teaching', true | sort: 'academic_year' | reverse %}
+
 <div class="teaching-page" id="teaching-catalog">
   <div class="teaching-intro">
     <p>Explore a course, its central ideas and its outline. This catalogue will grow as new classes are added.</p>
