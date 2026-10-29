@@ -2,15 +2,17 @@
 
 The Publications page and its downloadable citations are generated from these files:
 
-- `papers.bib`: published journal articles, full conference papers, and published abstracts.
+- `papers.bib`: published journal articles and full conference papers.
 - `preprints.bib`: works not yet represented by a published version.
 - `thesis.bib`: doctoral and master's theses.
+
+The public list covers quantum research and the optical-tweezers/stochastic-thermodynamics papers. Conference abstracts and earlier neural-probe/MEMS work are intentionally omitted.
 
 Add a standard BibTeX entry with a unique, stable key. Keep the publisher's author order and spelling, title, year, volume and article number or page range. Use a bare DOI such as `10.1103/zg87-t4y5`, and include a working `url`. Supply `month` and `day` when verified; these sort works within each year. UTF-8 names are supported.
 
 Optional display fields:
 
-- `kind = {conference}` for a full proceedings paper, or `kind = {abstract}` for a published conference abstract. Journal articles need no kind field. Use `@phdthesis` and `@mastersthesis` for theses.
+- `kind = {conference}` for a full proceedings paper. Journal articles need no kind field. Use `@phdthesis` for the doctoral thesis.
 - `summary`: a brief original description of the contribution.
 - `arxiv`: the arXiv identifier, without a URL or version suffix.
 - `pdf`, `code`, `data`: verified, publicly accessible URLs.

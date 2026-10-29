@@ -14,7 +14,7 @@ nav_order: 3
     <h1>Publications<span aria-hidden="true">.</span></h1>
     <p class="pub-intro">Quantum energy, information and open systems.<br>Explore my work, find a paper, or take a citation with you.</p>
     <div class="pub-overview">
-      <p class="pub-counts"><span><strong>{{ catalog.counts.article }}</strong> papers</span><span><strong>{{ catalog.counts.preprint }}</strong> {% if catalog.counts.preprint == 1 %}preprint{% else %}preprints{% endif %}</span><span><strong>{{ catalog.counts.abstract }}</strong> conference abstracts</span><span><strong>{{ catalog.counts.thesis }}</strong> theses</span></p>
+      <p class="pub-counts"><span><strong>{{ catalog.counts.article }}</strong> papers</span><span><strong>{{ catalog.counts.preprint }}</strong> {% if catalog.counts.preprint == 1 %}preprint{% else %}preprints{% endif %}</span><span><strong>{{ catalog.counts.thesis }}</strong> {% if catalog.counts.thesis == 1 %}thesis{% else %}theses{% endif %}</span></p>
       <div class="pub-profile-links"><a class="pub-text-link" href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar <span aria-hidden="true">↗</span></a><a class="pub-text-link" href="https://orcid.org/{{ site.data.socials.orcid_id }}">ORCID <span aria-hidden="true">↗</span></a></div>
     </div>
     <div class="pub-library-links" aria-label="Download the complete bibliography">
@@ -41,7 +41,6 @@ nav_order: 3
         <option value="all">All work</option>
         <option value="article">Articles &amp; proceedings</option>
         <option value="preprint">Preprints</option>
-        <option value="abstract">Conference abstracts</option>
         <option value="thesis">Theses</option>
       </select>
     </div>

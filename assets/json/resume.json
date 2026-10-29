@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "André H. A. Malavazi",
-    "label": "",
+    "label": "Theoretical physicist",
     "image": "",
-    "email": "",
+    "email": "andrehamalavazi@gmail.com",
     "phone": "",
-    "url": "",
-    "summary": "",
+    "url": "https://andreham.github.io/",
+    "summary": "Research on quantum energy storage, heat control and the thermodynamics of interacting systems, with an interest in connecting open-system theory to experimentally testable designs for superconducting circuits.",
     "location": {
       "address": "Jana Bażyńskiego 1A",
       "postalCode": "80-309",
@@ -16,30 +16,35 @@
     },
     "profiles": [
       {
-        "network": "",
-        "username": "",
-        "url": ""
+        "network": "ORCID",
+        "username": "0000-0002-0280-0621",
+        "url": "https://orcid.org/0000-0002-0280-0621"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "pN5CdqEAAAAJ",
+        "url": "https://scholar.google.com/citations?user=pN5CdqEAAAAJ"
       }
     ]
   },
   "work": [
     {
-      "name": "ICTQT (UG)",
-      "position": "Independent Posdoctoral Researcher",
+      "name": "International Centre for Theory of Quantum Technologies, University of Gdańsk",
+      "position": "Independent Postdoctoral Researcher",
       "url": "https://ictqt.ug.edu.pl",
       "startDate": "2025",
       "endDate": "",
-      "summary": "Principal Investigator of the Sonatina 9 research grant “Modular quantum thermal devices: integrating thermal functionalities",
-      "highlights": ["Research on quantum thermodynamics and quantum thermal devices in cQED platforms"]
+      "summary": "Principal Investigator of the NCN-funded SONATINA 9 project on modular quantum thermal devices.",
+      "highlights": ["Quantum thermodynamics, energy storage and heat control, with an emphasis on circuit quantum electrodynamics (cQED)."]
     },
     {
-      "name": "ICTQT (UG)",
-      "position": "Posdoctoral Researcher",
+      "name": "International Centre for Theory of Quantum Technologies, University of Gdańsk",
+      "position": "Postdoctoral Researcher",
       "url": "https://ictqt.ug.edu.pl",
       "startDate": "2022",
       "endDate": "2025",
-      "summary": "Postdoctoral Researcher @ the “New Quantum Resources and Thermodynamics Group” led by Prof. Dr. hab. Michał Horodecki",
-      "highlights": ["Research on open quantum systems and quantum thermodynamics"]
+      "summary": "New Quantum Resources and Thermodynamics Group, led by Michał Horodecki.",
+      "highlights": ["Research on open quantum systems and quantum thermodynamics."]
     }
   ],
   "volunteer": [
@@ -60,7 +65,7 @@
       "location": "Campinas-SP, Brazil",
       "url": "https://unicamp.br/en/",
       "area": "",
-      "studyType": "Bachelor in Physics and Biomedical Physics",
+      "studyType": "Bachelor’s degree in Physics and Biomedical Physics",
       "startDate": "",
       "endDate": "",
       "score": "",
@@ -71,9 +76,9 @@
       "location": "Campinas-SP, Brazil",
       "url": "https://unicamp.br/en/",
       "area": "MEMS and Neuroengineering",
-      "studyType": "Masters in Physics",
+      "studyType": "MSc in Physics",
       "startDate": "",
-      "endDate": "",
+      "endDate": "2016",
       "score": "",
       "courses": ""
     },
@@ -85,61 +90,65 @@
       "studyType": "PhD in Physics",
       "startDate": "",
       "endDate": "2022",
+      "advisor": "Frederico Brito",
       "score": "",
       "courses": ""
     }
   ],
   "grants": [
-     {
-      "title": "Sonatina 9",
+    {
+      "title": "SONATINA 9",
       "date": "2025",
+      "endDate": "2028",
+      "role": "Principal Investigator",
       "awarder": "NCN (Polish National Science Centre)",
-      "url": "",
-      "summary": "3 years grant"
-     },
-     {
-      "title": "PhD grant",
+      "url": "https://projekty.ncn.gov.pl/en/index.php?projekt_id=641119",
+      "project": "Modular quantum thermal devices: integrating thermal functionalities",
+      "summary": "A three-year research project investigating how heat manipulation and energy storage can be combined in integrated quantum thermal devices, with designs intended for superconducting circuits."
+    },
+    {
+      "title": "Doctoral scholarship",
       "date": "2016",
       "awarder": "CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior)",
       "url": "",
-      "summary": "4 years scholarship"
+      "summary": "Four-year scholarship"
     },
     {
-      "title": "MsC grant",
+      "title": "Master’s scholarship",
       "date": "2013",
       "awarder": "CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)",
       "url": "",
-      "summary": "2 years scholarship"
+      "summary": "Two-year scholarship"
     },
     {
       "title": "Undergraduate grant",
       "date": "2012",
       "awarder": "CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)",
       "url": "",
-      "summary": "1 year scholarship"
+      "summary": "One-year scholarship"
     },
     {
       "title": "Undergraduate grant",
       "date": "2010",
       "awarder": "CNPq (Conselho Nacional de Desenvolvimento Científico e Tecnológico)",
       "url": "",
-      "summary": "1 year scholarship"
+      "summary": "One-year scholarship"
     }
   ],
   "awards": [
     {
-      "title": "Best poster award - 2º BRAINN Congress",
+      "title": "Best Poster Award · 2nd BRAINN Congress",
       "date": "2015",
-      "awarder": "Unicamp",
+      "awarder": "University of Campinas (UNICAMP)",
       "url": "",
       "summary": "Award for the best poster in the Neurotechnology section"
     },
     {
-      "title": "Cândido Pinto de Melo Award - Honorable mention",
+      "title": "Cândido Pinto de Melo Award · Honorable Mention",
       "date": "2014",
       "awarder": "Brazilian Society of Biomedical Engineering",
       "url": "",
-      "summary": "The 'Cândido Pinto de Melo Award' is the highest scientific distinction awarded by the SBEB to students working in Biomedical Engineering."
+      "summary": "Honorable mention for student research in biomedical engineering."
     }
   ],
   "certificates": [
@@ -223,23 +232,17 @@
         "Stochastic Thermodynamics"
       ]
     },
-     {
+    {
       "name": "Programming",
       "level": "",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Wolfram Mathematica",
-        "Python",
-        "Julia"
-      ]
+      "keywords": ["Wolfram Mathematica", "Python", "Julia"]
     },
-     {
+    {
       "name": "Engineering",
       "level": "Masters",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Microfabrication (basic cleam-room experience)"
-      ]
+      "keywords": ["Microfabrication (basic clean-room experience)"]
     }
   ],
   "languages": [
@@ -298,18 +301,3 @@
     }
   ]
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

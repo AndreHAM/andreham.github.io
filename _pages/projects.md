@@ -1,115 +1,83 @@
 ---
 layout: page
 title: research
+display_title: Research
 permalink: /research/
-description:
+description: Storing useful energy, controlling heat, and understanding interacting quantum systems.
 nav: true
 nav_order: 2
-display_categories:
-horizontal: false
 ---
 
-
-
-<div class="row">
-    <!-- Text column (left) -->
-    <div class="col-sm-7">
-        <div class="text-justify">
-            <p>Modern breakthroughs in <span style="color: #6f42c1;">quantum information theory</span> and <span style="color: #6f42c1;">thermodynamics</span>, combined with advances in nanoscale fabrication and quantum control, are driving the next wave of <span style="color: #6f42c1;">Quantum Technologies 2.0</span>. These next-generation devices exploit quantum phenomena to revolutionize computing, communication, sensing, and simulation—raising crucial questions: Do quantum effects play any role in thermodynamics? If so, can we use it?
-        This challenge has given rise to <span style="color: #6f42c1;">quantum thermodynamics</span>, providing the tools to explore how quantum principles can enhance energy control in quantum counterparts of thermal devices.
-            </p>
-         </div>
+<div class="research-page">
+  <div class="research-lead">
+    <div>
+      <p class="research-intro">I develop theoretical approaches to energy storage and heat control in open quantum systems, connecting quantum information with thermodynamic device design.</p>
+      <p>My work combines analytical models and numerical analysis to identify useful physical mechanisms, their limitations, and routes towards experimentally testable implementations.</p>
     </div>
-        <!-- Image column (right) -->
-    <div class="col-sm-5">
-        {% include figure.liquid 
-           path="assets/img/venn.png" 
-           class="img-fluid rounded custom-img-size" 
-           alt="Quantum devices" %}
-        <div class="caption"><span style="color: #6f42c1;">Research direction</span></div>
+    <div class="research-figure research-overview-figure">
+      {% include figure.liquid path="assets/img/venn.png" class="img-fluid" alt="Research at the intersection of quantum thermodynamics, quantum information and open quantum systems" %}
     </div>
+  </div>
+
+  <aside class="research-direction" aria-labelledby="current-direction">
+    <p class="section-eyebrow">Current direction · SONATINA 2025–2028</p>
+    <h2 id="current-direction">Modular quantum thermal devices</h2>
+    <p>I lead a project at ICTQT, University of Gdańsk, investigating how heat manipulation and energy storage can be integrated in multifunctional quantum devices. A central goal is to adapt theoretical designs to superconducting circuits.</p>
+    <a href="https://projekty.ncn.gov.pl/en/index.php?projekt_id=641119">Explore the funded project <span aria-hidden="true">↗</span></a>
+  </aside>
+
+  <section class="research-theme" aria-labelledby="energy-storage">
+    <div class="research-theme-copy">
+      <p class="section-eyebrow">01 · Quantum energy storage</p>
+      <h2 id="energy-storage">Charging and protecting useful energy</h2>
+      <p>I study how measurements, controlled operations and engineered couplings affect the energy that can be extracted from a quantum battery.</p>
+      <p>Our contributions include charge-preserving operations, protocols that mitigate environmental discharge, and a charging scheme based on chiral squeezing.</p>
+      <ul class="research-paper-links">
+        <li><a href="https://journals.aps.org/prl/abstract/10.1103/zg87-t4y5">Chiral squeezing</a> <span>PRL · 2026</span></li>
+        <li><a href="https://journals.aps.org/prxenergy/abstract/10.1103/2jtp-jpkn">Charge-preserving operations</a> <span>PRX Energy · 2026</span></li>
+        <li><a href="https://journals.aps.org/prxenergy/abstract/10.1103/bv4w-jr6q">Ergotropy protection</a> <span>PRX Energy · 2025</span></li>
+      </ul>
+    </div>
+    <div class="research-figure">
+      {% include figure.liquid path="assets/img/QBattery.png" class="img-fluid" alt="A collection of quantum battery cells interacting with a thermal environment" zoomable=true %}
+      <p class="caption">Energy storage in an open quantum battery.</p>
+    </div>
+  </section>
+
+  <section class="research-theme" aria-labelledby="heat-control">
+    <div class="research-theme-copy">
+      <p class="section-eyebrow">02 · Quantum thermal devices</p>
+      <h2 id="heat-control">Controlling heat flow</h2>
+      <p>I investigate how interactions and energy-level structures determine thermal functionality. We showed how detuning in a three-subsystem model can support heat switching, rectification, stabilization and amplification.</p>
+      <ul class="research-paper-links">
+        <li><a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.109.064146">Detuning effects for heat-current control</a> <span>Physical Review E · 2024</span></li>
+      </ul>
+    </div>
+    <div class="research-figure">
+      {% include figure.liquid path="assets/img/transistor.png" class="img-fluid" alt="Schematic of a quantum thermal transistor coupled to three thermal reservoirs" zoomable=true %}
+      <p class="caption">A quantum counterpart of a thermal transistor.</p>
+    </div>
+  </section>
+
+  <section class="research-theme" aria-labelledby="foundations">
+    <div class="research-theme-copy">
+      <p class="section-eyebrow">03 · Thermodynamic foundations</p>
+      <h2 id="foundations">Local energy in interacting systems</h2>
+      <p>We proposed a Schmidt-decomposition framework for the energetics of autonomous bipartite quantum systems. It identifies local effective Hamiltonians and preserves energy additivity, including in strong-coupling scenarios.</p>
+      <ul class="research-paper-links">
+        <li><a href="https://doi.org/10.3390/e24111645">A Schmidt decomposition approach</a> <span>Entropy · 2022</span></li>
+        <li><a href="https://arxiv.org/abs/2211.07439">On the energetic analysis of autonomous quantum systems</a> <span>PhD thesis · 2022</span></li>
+      </ul>
+    </div>
+    <div class="research-figure">
+      {% include figure.liquid path="assets/img/energyAdd.png" class="img-fluid" alt="Local effective Hamiltonians whose energy expectations sum to the total energy of two interacting quantum systems" zoomable=true %}
+      <p class="caption">Local effective Hamiltonians and energy additivity.</p>
+    </div>
+  </section>
+
+  <div class="research-connect">
+    <p>Interested in a shared research question?</p>
+    <a class="site-button" href="mailto:andrehamalavazi@gmail.com">Discuss a collaboration <span aria-hidden="true">↗</span></a>
+    <a href="{{ '/publications/' | relative_url }}">Browse all publications</a>
+  </div>
 </div>
-At the nanoscale, managing heat flows—<span style="color: #6f42c1;">thermotronics</span>—mirrors electronics, enabling thermal logic and energy-efficient computing. Understanding these quantum-thermodynamic processes is key to optimizing energy use and minimizing waste heat.
-My research sits at the intersection of
-
-        ● Quantum Thermodynamics
-        ● Open Quantum Systems
-        ● Quantum Information
-        ● Quantum Thermotronics
-    
-to develop strategies to control energy flow in quantum systems and novel devices.
-
-
-<h2><span style="color: #6f42c1;">Quantum thermal devices</span></h2>
-
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/qbat.png" class="img-fluid rounded custom-img-size" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/QBattery.png" class="img-fluid rounded custom-img-size" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/transistor.png" class="img-fluid rounded custom-img-size" %}
-    </div>
-</div>
-<div class="caption">
-    <span style="color: #6f42c1;">Quantum thermal devices:</span> quantum batteries and quantum thermal transistor
-</div>
-
-
-
-<div class="text-justify">
-  <p>A quantum thermal device (QTD) is a system designed to perform specific thermodynamic tasks using quantum systems interacting with thermal reservoirs. Its operation depends on several key factors: the number of subsystems and reservoirs, their physical properties (such as dimensionality, energy spectrum, and particle statistics), temperature gradients, spatial arrangement, system-reservoir couplings, and internal interactions between subsystems.</p>
-</div>
-
-<div class="row">
-    <!-- Image column (left) -->
-    <div class="col-sm-3">
-        {% include figure.liquid 
-           path="assets/img/protocol.png" 
-           class="img-fluid rounded custom-img-size" 
-           alt="Quantum devices" %}
-        <div class="caption"><span style="color: #6f42c1;">Two-weak measurements (TWM) protocol</span></div>
-    </div>
-    <!-- Text column (right) -->
-    <div class="col-sm-9">
-        <div class="text-justify">
-            <p>My research systematically explores QTD parameters to develop novel architectures, with particular focus on <span style="color: #6f42c1;">quantum thermal transistors (QTTs)</span> and <span style="color: #6f42c1;">quantum batteries (QBs)</span>. A key objective involves optimizing their operational performance, including developing strategies to mitigate intrinsic QB discharge processes caused by environmental effects (TWM protocol) and enhancing heat flow amplification in QTTs. I am particularly interested in advancing the practical implementation of such devices beyond proof-of-principle demonstrations, especially within circuit quantum electrodynamics (cQED) platforms.</p>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-<h2><span style="color: #6f42c1;">Foundations of quantum thermodynamics</span></h2>
-
-
-
-<div class="row">
-    <!-- Text column (left) -->
-    <div class="col-sm-6">
-        <div class="text-justify">
-            <p>I am also deeply interested in the fundamental aspects of quantum thermodynamics, particularly in establishing general quantum counterparts of classical thermodynamic quantities such as work, heat, and entropy. Current definitions are typically limited to specific scenarios constrained by weak-coupling and Markovian assumptions—while thermodynamically relevant, these restrictions limit their applicability to more general cases.</p>
-            <p>To address this, we propose a universal definition of internal energy applicable to arbitrary quantum systems, including strongly coupled and fully autonomous scenarios. Remarkably, by starting from an isolated system, this approach enables the identification of time-dependent local operators (interpreted as <span style="color: #6f42c1;">Local Effective Hamiltonians</span>) whose expectation values sum to the total internal energy. This formulation naturally satisfies <span style="color: #6f42c1;">energy additivity</span> while maintaining broad applicability.</p>
-         </div>
-    </div>
-        <!-- Image column (right) -->
-    <div class="col-sm-5">
-        {% include figure.liquid 
-           path="assets/img/energyAdd.png" 
-           class="img-fluid rounded custom-img-size" 
-           alt="Quantum devices" %}
-        <div class="caption"><span style="color: #6f42c1;">Local Effective Hamiltonian and Energy additivity</span></div>
-    </div>
-</div>
-
-
-
-

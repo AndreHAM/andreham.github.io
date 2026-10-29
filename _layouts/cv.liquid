@@ -1,129 +1,252 @@
 ---
 layout: default
 ---
-{% unless site.data.resume %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            {% if page.cv_pdf contains '://' %}
-              href="{{ page.cv_pdf }}"
-            {% else %}
-              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
-
-    <article>
-      <div class="cv">
-        {% for entry in site.data.cv %}
-          <a class="anchor" id="{{ entry.title }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ entry.title }}</h3>
-            <div>
-              {% if entry.type == 'list' %}
-                {% include cv/list.liquid %}
-              {% elsif entry.type == 'map' %}
-                {% include cv/map.liquid %}
-              {% elsif entry.type == 'nested_list' %}
-                {% include cv/nested_list.liquid %}
-              {% elsif entry.type == 'time_table' %}
-                {% include cv/time_table.liquid %}
-              {% elsif entry.type == 'list_groups' %}
-                {% include cv/list_groups.liquid %}
-              {% else %}
-                {{ entry.contents }}
-              {% endif %}
-            </div>
-          </div>
-        {% endfor %}
-      </div>
-    </article>
-  </div>
-{% else %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        {{ page.title }}
-        {% if page.cv_pdf %}
-          <a
-            {% if page.cv_pdf contains '://' %}
-              href="{{ page.cv_pdf }}"
-            {% else %}
-              href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url }}"
-            {% endif %}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="float-right"
-          >
-            <i class="fa-solid fa-file-pdf"></i>
-          </a>
-        {% endif %}
-      </h1>
-      {% if page.description %}
-        <p class="post-description">{{ page.description }}</p>
-      {% endif %}
-    </header>
-
-    <article>
-      <div class="cv">
-        {% for data in site.data.resume %}
-          {% if site.jsonresume and site.jsonresume.size > 0 %}
-            {% unless site.jsonresume contains data[0] %}
-              {% continue %}
-            {% endunless %}
+{% assign resume = site.data.resume %}
+{% assign current_work = resume.work | first %}
+{% assign current_grant = resume.grants | first %}
+{% assign education = resume.education | reverse %}
+{% assign recent_papers = site.data.publication_catalog.items | where: 'kind', 'article' %}
+<article class="academic-cv" aria-labelledby="cv-name">
+  <header class="cv-hero">
+    <p class="cv-eyebrow">Short curriculum vitae</p>
+    <h1 id="cv-name">
+      {{ resume.basics.name | escape -}}
+      <span aria-hidden="true">.</span>
+    </h1>
+    <p class="cv-profession">{{ resume.basics.label | escape }}</p>
+    <p class="cv-current-role">{{ current_work.position | escape }}</p>
+    <p class="cv-affiliation">
+      <a href="{{ current_work.url | escape }}">{{ current_work.name | escape }}</a>
+    </p>
+    <p class="cv-location">{{ resume.basics.location.city | escape }}, {{ resume.basics.location.countryCode | escape }}</p>
+    <p class="cv-intro">{{ resume.basics.summary | escape }}</p>
+    <div class="cv-contact-row">
+      <ul class="cv-contact-list" aria-label="Contact and research profiles">
+        <li>
+          <a href="mailto:{{ resume.basics.email | escape }}">{{ resume.basics.email | escape }}</a>
+        </li>
+        {% for profile in resume.basics.profiles %}
+          {% if profile.url != blank %}
+            <li>
+              <a href="{{ profile.url | escape }}">
+                {{- profile.network | escape -}}
+                {%- if profile.network == 'ORCID' -%}
+                  <span class="cv-orcid"> {{ profile.username | escape }}</span>
+                {%- endif -%}
+              </a>
+            </li>
           {% endif %}
-          {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
-          <a class="anchor" id="{{ data[0] }}"></a>
-          <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
-            <div>
-              {% case data[0] %}
-                {% when 'basics' %}
-                  {% include resume/basics.liquid %}
-                {% when 'education' %}
-                  {% include resume/education.liquid %}
-                {% when 'work' %}
-                  {% include resume/work.liquid %}
-                {% when 'volunteer' %}
-                  {% include resume/volunteer.liquid %}
-                {% when 'projects' %}
-                  {% include resume/projects.liquid %}
-                {% when 'grants' %}
-                  {% include resume/grants.liquid %}
-                {% when 'awards' %}
-                  {% include resume/awards.liquid %}
-                {% when 'skills' %}
-                  {% include resume/skills.liquid %}
-                {% when 'publications' %}
-                  {% include resume/publications.liquid %}
-                {% when 'languages' %}
-                  {% include resume/languages.liquid %}
-                {% when 'interests' %}
-                  {% include resume/interests.liquid %}
-                {% when 'certificates' %}
-                  {% include resume/certificates.liquid %}
-                {% when 'references' %}
-                  {% include resume/references.liquid %}
-                {% else %}
+        {% endfor %}
+      </ul>
+      <button class="cv-print-button" type="button" data-cv-print hidden>Print / save PDF <span aria-hidden="true">↗</span></button>
+    </div>
+    <noscript><p class="cv-print-hint">Use your browser’s Print command to save this CV as a PDF.</p></noscript>
+  </header>
+  <nav class="cv-section-nav" aria-label="CV sections">
+    <a href="#grants">Research &amp; funding</a>
+    <a href="#work">Appointments</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Expertise</a>
+    {% if recent_papers.size > 0 -%}
+      <a href="#cv-publications">Publications</a>
+    {%- endif %}
+    <a href="#awards">Recognition</a>
+  </nav>
 
-              {% endcase %}
-            </div>
+  <section class="cv-section" id="grants" aria-labelledby="cv-research-title">
+    <div class="cv-section-heading">
+      <span class="cv-section-number" aria-hidden="true">01</span>
+      <h2 id="cv-research-title">
+        Research<br>
+        &amp; funding
+      </h2>
+    </div>
+    <div class="cv-section-body">
+      <div class="cv-project">
+        <div class="cv-project-topline">
+          <span class="cv-project-role">{{ current_grant.role | escape }}</span
+          ><span class="cv-project-period">{{ current_grant.date | escape }}–{{ current_grant.endDate | escape }}</span>
+        </div>
+        <h3>{{ current_grant.project | escape }}</h3>
+        <p class="cv-project-funder">{{ current_grant.title | escape }} · {{ current_grant.awarder | escape }}</p>
+        <p>{{ current_grant.summary | escape }}</p>
+        <a class="cv-project-link" href="{{ current_grant.url | escape }}">Project details at NCN <span aria-hidden="true">↗</span></a>
+      </div>
+      {% if resume.grants.size > 1 %}
+        <details class="cv-earlier-funding">
+          <summary>Earlier research support <span aria-hidden="true">+</span></summary>
+          <ul class="cv-funding-list">
+            {% for grant in resume.grants offset: 1 %}
+              <li>
+                <span class="cv-funding-date">{{ grant.date | escape }}</span>
+                <div>
+                  <strong>{{ grant.title | escape }}</strong><span>{{ grant.awarder | escape }} · {{ grant.summary | escape }}</span>
+                </div>
+              </li>
+            {% endfor %}
+          </ul>
+        </details>
+      {% endif %}
+    </div>
+  </section>
+
+  <section class="cv-section" id="work" aria-labelledby="cv-appointments-title">
+    <div class="cv-section-heading">
+      <span class="cv-section-number" aria-hidden="true">02</span>
+      <h2 id="cv-appointments-title">Appointments</h2>
+    </div>
+    <ol class="cv-timeline cv-section-body">
+      {% for job in resume.work %}
+        <li class="cv-timeline-entry">
+          <div class="cv-entry-date">
+            <time datetime="{{ job.startDate | escape }}">{{ job.startDate | escape }}</time
+            ><span
+              >–
+              {% if job.endDate != blank -%}
+                <time datetime="{{ job.endDate | escape }}">{{ job.endDate | escape }}</time>
+              {%- else -%}
+                present
+              {%- endif -%}
+            </span>
+          </div>
+          <div class="cv-entry-content">
+            <h3>{{ job.position | escape }}</h3>
+            <p class="cv-institution">
+              <a href="{{ job.url | escape }}">{{ job.name | escape }}</a>
+            </p>
+            <p>{{ job.summary | escape }}</p>
+            {% if job.highlights.size > 0 %}
+              <ul class="cv-entry-highlights">
+                {% for highlight in job.highlights -%}
+                  {%- if highlight != blank %}
+                    <li>{{ highlight | escape }}</li>
+                  {% endif -%}
+                {%- endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="cv-section" id="education" aria-labelledby="cv-education-title">
+    <div class="cv-section-heading">
+      <span class="cv-section-number" aria-hidden="true">03</span>
+      <h2 id="cv-education-title">Education</h2>
+    </div>
+    <ol class="cv-timeline cv-section-body">
+      {% for degree in education %}
+        <li class="cv-timeline-entry">
+          <div class="cv-entry-date">
+            {% if degree.endDate != blank -%}
+              <time datetime="{{ degree.endDate | escape }}">{{ degree.endDate | escape }}</time>
+            {%- endif %}
+          </div>
+          <div class="cv-entry-content">
+            <h3>{{ degree.studyType | escape }}</h3>
+            <p class="cv-institution">
+              <a href="{{ degree.url | escape }}">{{ degree.institution | escape }}</a>
+            </p>
+            {% if degree.area != blank %}
+              <p>{{ degree.area | escape }}</p>
+            {% endif %}
+            {% if degree.advisor != blank %}
+              <p class="cv-secondary">Supervisor: {{ degree.advisor | escape }}</p>
+            {% endif %}
+            <p class="cv-entry-location">{{ degree.location | escape }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="cv-section" id="skills" aria-labelledby="cv-expertise-title">
+    <div class="cv-section-heading">
+      <span class="cv-section-number" aria-hidden="true">04</span>
+      <h2 id="cv-expertise-title">Expertise</h2>
+    </div>
+    <div class="cv-section-body">
+      <div class="cv-skill-groups">
+        {% for skill in resume.skills %}
+          <div class="cv-skill-group">
+            <h3>{{ skill.name | escape }}</h3>
+            <ul class="cv-tags" aria-label="{{ skill.name | escape }} skills">
+              {% for keyword in skill.keywords %}
+                <li>{{ keyword | escape }}</li>
+              {% endfor %}
+            </ul>
           </div>
         {% endfor %}
       </div>
-    </article>
-  </div>
-{% endunless %}
+      <div class="cv-languages" id="languages">
+        <h3>Languages</h3>
+        <ul>
+          {% for language in resume.languages %}
+            <li>
+              <strong>{{ language.language | escape }}</strong><span>{{ language.fluency | escape }}</span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  {% if recent_papers.size > 0 %}
+    <section class="cv-section" id="cv-publications" aria-labelledby="cv-publications-title">
+      <div class="cv-section-heading">
+        <span class="cv-section-number" aria-hidden="true">05</span>
+        <h2 id="cv-publications-title">
+          Recent<br>
+          publications
+        </h2>
+        <a class="cv-archive-link" href="{{ '/publications/' | relative_url }}">Full archive <span aria-hidden="true">↗</span></a>
+      </div>
+      <ol class="cv-publications cv-section-body">
+        {% for paper in recent_papers limit: 3 %}
+          <li>
+            <h3>
+              <a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a>
+            </h3>
+            <p>
+              <em>{{ paper.venue | escape }}</em>
+              {%- if paper.volume != blank %}
+                <strong>{{ paper.volume | escape }}</strong>
+              {%- endif -%}
+              {%- if paper.pages != blank %}, {{ paper.pages | escape }}{% endif %} ({{ paper.year | escape }})
+            </p>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+  {% endif %}
+
+  <section class="cv-section" id="awards" aria-labelledby="cv-recognition-title">
+    <div class="cv-section-heading">
+      <span class="cv-section-number" aria-hidden="true">
+        {%- if recent_papers.size > 0 %}06{% else %}05{% endif -%}
+      </span>
+      <h2 id="cv-recognition-title">Recognition</h2>
+    </div>
+    <ol class="cv-timeline cv-section-body">
+      {% for award in resume.awards %}
+        <li class="cv-timeline-entry">
+          <div class="cv-entry-date">
+            <time datetime="{{ award.date | escape }}">{{ award.date | escape }}</time>
+          </div>
+          <div class="cv-entry-content">
+            <h3>{{ award.title | escape }}</h3>
+            <p class="cv-institution">{{ award.awarder | escape }}</p>
+            <p>{{ award.summary | escape }}</p>
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <footer class="cv-document-footer">
+    <a href="{{ resume.basics.url | escape }}">{{ resume.basics.url | remove: 'https://' | remove: 'http://' | escape }}</a
+    ><span>Short academic CV · full research record in the <a href="{{ '/publications/' | relative_url }}">publication archive</a></span>
+  </footer>
+</article>
+<script defer src="{{ '/assets/js/cv.js' | relative_url | bust_file_cache }}"></script>

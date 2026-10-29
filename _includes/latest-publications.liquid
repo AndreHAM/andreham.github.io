@@ -1,0 +1,26 @@
+{% assign recent_papers = site.data.publication_catalog.items | where: 'kind', 'article' %}
+{% if recent_papers.size > 0 %}
+  <section class="latest-publications" aria-labelledby="latest-publications-title">
+    <div class="latest-publications-heading">
+      <h2 id="latest-publications-title">Latest publications</h2>
+      <a href="{{ '/publications/' | relative_url }}">Full archive <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="latest-publication-grid">
+      {% for paper in recent_papers limit: 3 %}
+        <article class="latest-publication-card">
+          <p class="latest-publication-year">
+            {{ paper.year }}
+            <span aria-hidden="true">·</span> {{ paper.venue | escape }}
+          </p>
+          <h3>
+            <a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a>
+          </h3>
+          <div class="latest-publication-links">
+            <a href="{{ paper.url | escape }}">Read paper <span aria-hidden="true">↗</span></a
+            ><a href="{{ '/publications/' | relative_url }}#cite-{{ paper.id }}">Cite</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

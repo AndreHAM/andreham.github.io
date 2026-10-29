@@ -4,12 +4,12 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: André
-middle_name: 
+middle_name:
 last_name: H. A. Malavazi, PhD
 contact_note: >
   You can even add a little note about which of these is the best way to reach you.
-description: > #"Official website of André Hernandes Alves Malavazi – research, publications, CV, contact info" # the ">" symbol means to ignore newlines until "footer_text:"
-  Visit my personal academic page!
+description: >
+  André H. A. Malavazi — quantum thermodynamics, open quantum systems and quantum thermal devices at ICTQT, University of Gdańsk.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -48,7 +48,7 @@ rss_icon: true
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: true
 socials_in_search: true
 posts_in_search: false
@@ -200,7 +200,7 @@ exclude:
   - _news/announcement_*.md
   - _pages/blog.md
   - _pages/repositories.md
-#  - _pages/teaching.md
+  #  - _pages/teaching.md
   - _pages/dropdown.md
   - _pages/profiles.md
   - _pages/books.md
@@ -230,8 +230,8 @@ plugins:
   - jekyll-toc
   - jekyll-twitter-plugin
   - jemoji
- # - jekyll-seo-tag
- # - jekyll-google_search_console_verification_file
+  # - jekyll-seo-tag
+  # - jekyll-google_search_console_verification_file
 
 # Sitemap settings
 defaults:
@@ -658,4 +658,4 @@ jsonresume:
 sort_by: year, month
 order: descending
 type_order: [unpublished, article, inbook, conference, incollections, inproceedings, proceedings, book, misc, techreport]
-type_names: {unpublished: preprints}
+type_names: { unpublished: preprints }

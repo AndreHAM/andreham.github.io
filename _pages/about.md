@@ -31,15 +31,17 @@ I study how energy can be stored, protected, and controlled in open quantum syst
 
 I am based at the [International Centre for Theory of Quantum Technologies](https://ictqt.ug.edu.pl/), University of Gdańsk, where I lead the NCN-funded SONATINA project [“Modular quantum thermal devices: integrating thermal functionalities”](https://projekty.ncn.gov.pl/en/index.php?projekt_id=641119) (2025–2028). The project investigates how heat manipulation and energy storage can be combined within integrated quantum devices, with the goal of developing designs suited to superconducting circuits.
 
+{% include latest-publications.liquid %}
+
 ## Research
 
-My work centres on three connected questions:
+Quantum energy storage, heat-flow control and local energetics are the main threads of my research. We proposed a Schmidt-decomposition approach that preserves energy additivity in interacting autonomous systems, including strong coupling.
 
-- **How can quantum batteries retain useful energy?** I investigate how measurements and controlled operations can mitigate environmental losses and manage extractable work. Recent contributions include a [weak-measurement protocol for ergotropy protection](https://journals.aps.org/prxenergy/abstract/10.1103/bv4w-jr6q) and a framework for [charge-preserving operations](https://journals.aps.org/prxenergy/abstract/10.1103/2jtp-jpkn), published in _PRX Energy_.
+### Recent contributions
 
-- **How can we control heat in quantum devices?** I study how interactions, energy-level structures and environmental couplings determine thermal functionality. Our [work on heat-current control](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.109.064146) examines how a quantum device can operate as a switch, rectifier, stabilizer or amplifier.
-
-- **How should we describe energy in interacting quantum systems?** My foundations research addresses local energetics in autonomous systems, including strong coupling. With Frederico Brito, I developed a [Schmidt-decomposition approach](https://arxiv.org/abs/2205.06917) that identifies local effective Hamiltonians and preserves energy additivity.
+- **Quantum batteries:** [Chiral squeezing (2026)](https://journals.aps.org/prl/abstract/10.1103/zg87-t4y5), [charge-preserving operations (2026)](https://journals.aps.org/prxenergy/abstract/10.1103/2jtp-jpkn), and [ergotropy protection (2025)](https://journals.aps.org/prxenergy/abstract/10.1103/bv4w-jr6q).
+- **Heat transport:** [Detuning and thermal-device functionality (2024)](https://journals.aps.org/pre/abstract/10.1103/PhysRevE.109.064146).
+- **Foundations:** [Schmidt decomposition and local energetics (2022)](https://doi.org/10.3390/e24111645).
 
 Explore my [research](/research/) and [publications](/publications/).
 
@@ -53,6 +55,6 @@ Potential starting points include developing experimentally testable battery-pro
 
 ## Background
 
-I completed my PhD in quantum thermodynamics at the University of São Paulo in 2022 under Frederico Brito, followed by postdoctoral research at ICTQT in Michał Horodecki’s New Quantum Resources and Thermodynamics Group. My earlier research in MEMS and neuroengineering, together with collaborative work in stochastic thermodynamics, informs my interest in connecting physical models with practical systems.
+I completed my PhD in quantum thermodynamics at the [University of São Paulo](https://www5.usp.br/english/institutional/) in 2022 under [Frederico Brito](https://www.tii.ae/team/prof-dr-frederico-brito) ([academic tree](http://academictree.org/physics/tree.php?pid=959004&pnodecount=6&cnodecount=2&fontsize=1)), followed by postdoctoral research at [ICTQT](https://ictqt.ug.edu.pl/) in Michał Horodecki’s New Quantum Resources and Thermodynamics Group. My earlier research in MEMS and neuroengineering, together with collaborative work in stochastic thermodynamics, informs my interest in connecting physical models with practical systems.
 
-See my [short CV](/cv/) for further details.
+Read my [PhD thesis](https://arxiv.org/abs/2211.07439) and [MSc dissertation](https://repositorio.unicamp.br/Acervo/Detalhe/965393) (in Portuguese), or see my [short CV](/cv/) for further details.
