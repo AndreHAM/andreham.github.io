@@ -51,7 +51,7 @@ I welcome collaborations with theorists and experimentalists working on quantum 
 
 Potential starting points include developing experimentally testable battery-protection protocols, modelling devices that combine thermal functions, and investigating energetic constraints in interacting quantum systems. I am particularly interested in projects where analytical modelling and numerical analysis can help connect a theoretical proposal to an experimental platform.
 
-**To discuss a project or research question, email [andrehamalavazi@gmail.com](mailto:andrehamalavazi@gmail.com).**
+**To discuss a project or research question, email andrehamalavazi at gmail.com.**
 
 ## Background
 
