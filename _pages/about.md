@@ -28,22 +28,6 @@ latest_posts:
 ---
 
 
-I am the Principal Investigator of the Sonatina research grant <span style="color: #6f42c1;">"Modular quantum thermal devices: integrating thermal functionalities"</span> at the [International Centre for Theory of Quantum Technologies (ICTQT)](https://ictqt.ug.edu.pl), [University of Gdańsk](https://en.ug.edu.pl), funded by the [Polish National Science Centre](https://ncn.gov.pl), 2025-2028.
+I study how energy can be stored, protected, and controlled in open quantum systems. My research connects quantum thermodynamics and quantum information, with a focus on quantum batteries, thermal devices, and circuit quantum electrodynamics.
 
-Previously, I worked as a Postdoctoral Researcher at ICTQT-UG in the <span style="color: #6f42c1;">"New Quantum Resources and Thermodynamics Group"</span>, under the supervision of <span style="color: #6f42c1;">Prof. Dr. hab. Michał Horodecki</span>. Before that, I completed my Ph.D. in quantum thermodynamics at the [University of São Paulo](https://www5.usp.br/english/institutional/), Brazil, under the supervision of <span style="color: #6f42c1;">[Prof. Dr. Frederico Brito](https://www.tii.ae/team/prof-dr-frederico-brito)</span> ([academic tree](http://academictree.org/physics/tree.php?pid=959004&pnodecount=6&cnodecount=2&fontsize=1)). You can find my thesis [here](https://arxiv.org/abs/2211.07439).
-
-
-I am particularly passionate about:
-
-     ● Quantum Thermodynamics
-     ● Open Quantum Systems
-     ● Quantum Information
-     ● Stochastic Thermodynamics
-     ● cQED platforms
-     
-
-My research explores the interplay between quantum information, thermodynamics, and open systems, aiming to uncover new fundamental limits and applications for emerging quantum technologies 2.0. For details on my work, see my [publications page](/publications/). I’m always open to discussions and collaborations—feel free to reach out!
-
-Before moving to quantum sciences, I have worked with MEMS (micro-electromechanical systems) and neuroengineering. You can find my Msc Dissertation [here](https://repositorio.unicamp.br/Acervo/Detalhe/965393) (in portuguese).
-
-My [Erdos](https://mathscinet.ams.org/mathscinet/freetools/collab-dist) number is 4.
+At the International Centre for Theory of Quantum Technologies, University of Gdańsk, I lead the NCN-funded SONATINA project “Modular quantum thermal devices: integrating thermal functionalities” (2025–2028).
