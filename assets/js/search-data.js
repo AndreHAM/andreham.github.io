@@ -11,28 +11,28 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "research",
-          description: "",
+          description: "Storing useful energy, controlling heat, and understanding interacting quantum systems.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-publications",
           title: "publications",
-          description: "",
+          description: "Research articles, preprints and theses by André H. A. Malavazi, with reading links and downloadable citations.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-teaching",
           title: "teaching",
-          description: "Courses and materials.",
+          description: "Courses in quantum information, open systems and superconducting circuits.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/teaching/";
           },
         },{id: "nav-short-cv",
           title: "short cv",
-          description: "",
+          description: "Research profile, appointments, education, funding and expertise of André H. A. Malavazi.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -68,7 +68,14 @@ ninja.data = [{
         title: 'LinkedIn',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/www.linkedin.com/in/andré-malavazi-280780213", "_blank");
+          window.open("https://www.linkedin.com/in/andré-malavazi-280780213", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0000-0002-0280-0621", "_blank");
         },
       },{
         id: 'social-researchgate',

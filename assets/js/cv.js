@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector("[data-cv-print]");e&&(e.hidden=!1,e.addEventListener("click",(()=>window.print())))})();
