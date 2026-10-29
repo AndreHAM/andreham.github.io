@@ -1,0 +1,436 @@
+/* Publication archive: scoped to preserve the rest of the al-folio theme. */
+.publication-page {
+  --pub-accent-wash: color-mix(in srgb, var(--global-theme-color) 7%, var(--global-bg-color));
+  --pub-border: color-mix(in srgb, var(--global-text-color) 17%, var(--global-bg-color));
+  --pub-muted: color-mix(in srgb, var(--global-text-color) 68%, var(--global-bg-color));
+  padding-bottom: 2rem;
+  [hidden] {
+    display: none !important;
+  }
+  a,
+  button,
+  input,
+  select,
+  summary {
+    &:focus-visible {
+      outline: 3px solid var(--global-theme-color);
+      outline-offset: 4px;
+    }
+  }
+  .pub-header {
+    padding: 0.4rem 0 2rem;
+    border-bottom: 1px solid var(--pub-border);
+  }
+  .pub-eyebrow {
+    margin: 0 0 0.7rem;
+    color: var(--global-theme-color);
+    font-size: 0.73rem;
+    font-weight: 700;
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+  }
+  .pub-header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(3rem, 7vw, 4.6rem);
+    font-weight: 400;
+    letter-spacing: -0.055em;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+  }
+  .pub-header h1 > span {
+    color: var(--global-theme-color);
+  }
+  .pub-intro {
+    color: var(--global-text-color);
+    font-size: 1.1rem;
+    line-height: 1.65;
+    max-width: 42rem;
+    margin-bottom: 1.5rem;
+  }
+  .pub-overview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .pub-counts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem 1.1rem;
+    font-size: 0.82rem;
+    margin: 0;
+  }
+  .pub-counts strong {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .pub-counts > span {
+    white-space: nowrap;
+  }
+  .pub-text-link {
+    font-size: 0.85rem;
+  }
+  .pub-profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+  }
+  .pub-library-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1.15rem;
+    margin-top: 1.15rem;
+    font-size: 0.8rem;
+  }
+  .pub-library-links > span {
+    color: var(--pub-muted);
+  }
+  .pub-library-links a {
+    font-weight: 500;
+  }
+  .pub-toolbar {
+    display: grid;
+    grid-template-columns: minmax(12rem, 1fr) 8rem 12rem auto;
+    align-items: end;
+    gap: 0.85rem;
+    padding: 1.6rem 0 1.2rem;
+  }
+  .pub-toolbar label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.74rem;
+    font-weight: 600;
+  }
+  .pub-toolbar input,
+  .pub-toolbar select {
+    width: 100%;
+    height: 2.75rem;
+    border: 1px solid var(--pub-border);
+    border-radius: 6px;
+    padding: 0.6rem 0.7rem;
+    background: var(--global-bg-color);
+    color: var(--global-text-color);
+    font: inherit;
+    font-size: 0.85rem;
+  }
+  .pub-toolbar input::placeholder {
+    color: var(--pub-muted);
+    opacity: 1;
+  }
+  .pub-reset {
+    height: 2.75rem;
+    border: 0;
+    background: transparent;
+    color: var(--global-theme-color);
+    font-size: 0.8rem;
+    cursor: pointer;
+    padding: 0.4rem 0.25rem;
+  }
+  .pub-browse-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.2rem 0 1.4rem;
+  }
+  .pub-years {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+  .pub-years a {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.78rem;
+    font-weight: 500;
+    color: var(--global-text-color);
+    border: 1px solid var(--pub-border);
+    border-radius: 4px;
+  }
+  .pub-years a:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+  .pub-result-count {
+    margin: 0;
+    font-size: 0.75rem;
+    color: var(--pub-muted);
+  }
+  .pub-year-group {
+    display: grid;
+    grid-template-columns: 6.5rem minmax(0, 1fr);
+    gap: 1.5rem;
+    border-top: 1px solid var(--pub-border);
+    padding-top: 1.8rem;
+    margin-bottom: 0.5rem;
+    scroll-margin-top: 6rem;
+  }
+  .pub-year-heading h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.3rem;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    margin: 0.2rem 0 0.5rem;
+  }
+  .pub-year-heading > span {
+    color: var(--pub-muted);
+    font-size: 0.73rem;
+  }
+  .pub-item {
+    position: relative;
+    padding: 0 0 1.7rem;
+    margin-bottom: 1.7rem;
+    border-bottom: 1px solid var(--pub-border);
+    scroll-margin-top: 6rem;
+    min-width: 0;
+  }
+  .pub-item:last-child {
+    border-bottom: 0;
+    margin-bottom: 0;
+  }
+  .pub-item:target {
+    background: var(--pub-accent-wash);
+    outline: 6px solid var(--pub-accent-wash);
+  }
+  .pub-legacy-anchor {
+    position: absolute;
+    top: -6rem;
+  }
+  .pub-featured {
+    background: var(--pub-accent-wash);
+    padding: 1.35rem;
+    border: 1px solid var(--pub-border);
+    border-radius: 9px;
+  }
+  .pub-item-topline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    align-items: center;
+    margin-bottom: 0.65rem;
+  }
+  .pub-type {
+    font-size: 0.66rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.095em;
+    color: var(--pub-muted);
+  }
+  .pub-type-preprint {
+    color: var(--global-theme-color);
+  }
+  .pub-feature-label {
+    color: var(--global-theme-color);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    border-left: 1px solid var(--pub-border);
+    padding-left: 0.7rem;
+  }
+  .pub-item h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.35;
+    margin: 0 0 0.65rem;
+  }
+  .pub-item h3 a {
+    color: var(--global-text-color);
+  }
+  .pub-item h3 a:hover {
+    color: var(--global-theme-color);
+  }
+  .pub-authors {
+    font-size: 0.82rem;
+    line-height: 1.65;
+    margin-bottom: 0.35rem;
+  }
+  .pub-authors strong {
+    font-weight: 600;
+  }
+  .pub-venue {
+    font-size: 0.8rem;
+    margin-bottom: 0.6rem;
+  }
+  .pub-venue > span:first-child {
+    font-style: italic;
+  }
+  .pub-date {
+    white-space: nowrap;
+  }
+  .pub-summary {
+    color: var(--pub-muted);
+    font-size: 0.875rem;
+    line-height: 1.65;
+    margin: 0.7rem 0 1rem;
+  }
+  .pub-actions,
+  .pub-cite-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+  }
+  .pub-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.38rem 0.7rem;
+    border: 1px solid var(--pub-border);
+    border-radius: 5px;
+    background: transparent;
+    color: var(--global-text-color);
+    font: inherit;
+    font-size: 0.78rem;
+    line-height: 1.4;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .pub-action:hover {
+    border-color: var(--global-theme-color);
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+  .pub-read {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+  }
+  .pub-permalink {
+    margin-left: auto;
+    font-size: 0.9rem;
+    opacity: 0.6;
+    padding: 0.3rem 0.6rem;
+  }
+  .pub-doi {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: 0.75rem;
+    color: var(--pub-muted);
+    overflow-wrap: anywhere;
+  }
+  .pub-cite {
+    margin-top: 0.8rem;
+    scroll-margin-top: 6rem;
+  }
+  .pub-cite summary {
+    list-style: none;
+    display: inline-flex;
+    gap: 0.7rem;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.75rem;
+    color: var(--global-theme-color);
+    padding: 0.2rem 0;
+  }
+  .pub-cite summary::-webkit-details-marker {
+    display: none;
+  }
+  .pub-cite summary > span {
+    font-size: 1rem;
+    transition: transform 0.15s ease;
+  }
+  .pub-cite[open] summary > span {
+    transform: rotate(45deg);
+  }
+  .pub-cite-content {
+    padding-top: 0.8rem;
+  }
+  .pub-citation {
+    font-size: 0.8rem;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+  }
+  .pub-bibtex {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: 0.71rem;
+    line-height: 1.65;
+    padding: 1rem;
+    margin: 0.9rem 0 0;
+    background: var(--global-code-bg-color);
+    border: 1px solid var(--pub-border);
+    border-radius: 5px;
+    color: var(--global-text-color);
+  }
+  .pub-empty {
+    padding: 3rem 1rem;
+    text-align: center;
+    border-block: 1px solid var(--pub-border);
+  }
+  .pub-empty h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.7rem;
+  }
+  .pub-empty p,
+  .pub-footer {
+    color: var(--pub-muted);
+    font-size: 0.8rem;
+  }
+  .pub-footer {
+    padding-top: 1rem;
+    border-top: 1px solid var(--pub-border);
+  }
+  .pub-footer p {
+    margin-bottom: 0.45rem;
+  }
+  @media (max-width: 680px) {
+    .pub-toolbar {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+    }
+    .pub-search-field {
+      grid-column: 1 / -1;
+    }
+    .pub-reset {
+      grid-column: 1 / -1;
+      justify-self: start;
+      height: auto;
+      padding: 0;
+    }
+    .pub-year-group {
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.2rem;
+      padding-top: 1.3rem;
+    }
+    .pub-year-heading {
+      display: flex;
+      align-items: baseline;
+      gap: 0.8rem;
+    }
+    .pub-year-heading h2 {
+      font-size: 2rem;
+      margin-bottom: 0;
+    }
+    .pub-item h3 {
+      font-size: 1.25rem;
+    }
+    .pub-featured {
+      padding: 1rem;
+    }
+  }
+  @media print {
+    .pub-toolbar,
+    .pub-browse-row,
+    .pub-actions,
+    .pub-cite,
+    .pub-library-links,
+    .pub-footer {
+      display: none !important;
+    }
+    .pub-year-group {
+      display: block;
+      break-inside: auto;
+    }
+    .pub-year-heading {
+      margin-bottom: 1rem;
+    }
+    .pub-item {
+      break-inside: avoid;
+    }
+  }
+}

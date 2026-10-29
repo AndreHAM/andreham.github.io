@@ -5,53 +5,48 @@ description: Course for the Quantum Information Technology (QIT) Master’s prog
 img: assets/img/TransmonDesign.png
 importance: 1
 category: [ICTQT, 2025]
+teaching: true
+academic_year: 2025
+term: Fall
+level: Master's
+discipline: Quantum technologies
+topics: [Quantum mechanics, Open quantum systems, Superconducting qubits]
+notes_url:
 related_publications: false
 ---
 
-<style>
-h1 {
-  font-size: 1.8rem;
-  color: #6f42c1;  /* change this */
-}
-</style>
+**Fall 2025** · Tutorials: Aravinth B. Ravichandran
 
+<p class="course-back-link"><a href="{{ '/teaching/' | relative_url }}">← All courses</a></p>
 
+## Course outline
 
+1. Review of quantum mechanics
+2. Basics of open quantum systems
+3. Superconducting qubits
 
+## Course notes
 
-    
-    Year: 2025
-    Term: Fall
-    Tutorials: Aravinth B. Ravichandran
-    Content: 
-        ●  Part 1 - Review of Quantum Mechanics 
-        ●  Part 2 - Basics of Open Quantum Systems
-        ●  Part 3 - Superconducting Qubits
-
-
-Notes can be found here.
-
-
-
+{% if page.notes_url != blank %}
+[Open course notes]({{ page.notes_url | relative_url }})
+{% else %}
+Course notes will be added here.
+{% endif %}
 
 <div class="col-sm mt-1 mt-md-0 text-center">
     {% include figure.liquid path="assets/img/Curso.png"
-           class="img-fluid rounded z-depth-0" style="max-width: 30px;" %}
+           class="img-fluid rounded z-depth-0" alt="Course illustration of superconducting circuits" %}
 </div>
 <div class="caption text-center">
-    Surperconducting circuits!
+    Superconducting circuits
 </div>
 
 <div class="row justify-content-sm-center">
     <div class="col-sm mt-1 mt-md-0 text-center">
         {% include figure.liquid path="assets/img/Curso2.png"
-           class="img-fluid rounded z-depth-0" %}
+           class="img-fluid rounded z-depth-0" alt="Course illustration of superconducting-qubit physics" %}
     </div>
 </div>
 <div class="caption text-center">
-    Cool plots!
+    Exploring superconducting-qubit physics
 </div>
-
-
-
-

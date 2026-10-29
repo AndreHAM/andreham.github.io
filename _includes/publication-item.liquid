@@ -1,0 +1,98 @@
+{% assign paper = include.paper %}
+<article
+  class="pub-item{% if paper.featured %} pub-featured{% endif %}"
+  id="{{ paper.id }}"
+  data-publication
+  data-year="{{ paper.year }}"
+  data-type="{{ paper.kind }}"
+  data-search="{{ paper.title | append: ' ' | append: paper.authors_text | append: ' ' | append: paper.venue | append: ' ' | append: paper.doi | append: ' ' | append: paper.summary | escape }}"
+  aria-labelledby="title-{{ paper.id }}"
+>
+  {% if paper.key != paper.id %}<span id="{{ paper.key | escape }}" class="pub-legacy-anchor" aria-hidden="true"></span>{% endif %}
+  <div class="pub-item-topline">
+    <span class="pub-type pub-type-{{ paper.kind }}">{{ paper.type_label }}</span>
+    {% if paper.featured -%}
+      <span class="pub-feature-label">Featured</span>
+    {%- endif %}
+  </div>
+  <h3 id="title-{{ paper.id }}">
+    <a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a>
+  </h3>
+  <p class="pub-authors">
+    {% for author in paper.authors -%}
+      {%- unless forloop.first %}, {% endunless -%}
+      {%- if author.self -%}
+        <strong>{{ author.name | escape }}</strong>
+      {%- else -%}
+        {{- author.name | escape -}}
+      {%- endif -%}
+    {%- endfor %}
+  </p>
+  <p class="pub-venue">
+    <span>{{ paper.venue | escape }}</span>
+    {%- if paper.volume != '' %}
+      <strong>{{ paper.volume | escape }}</strong>
+    {%- endif -%}
+    {%- if paper.pages != '' %}, {{ paper.pages | escape }}{% endif %}
+    <span class="pub-date">({{ paper.year }})</span>
+  </p>
+  {% if paper.summary != '' %}
+    <p class="pub-summary">{{ paper.summary | escape }}</p>
+  {% endif %}
+  <div class="pub-actions">
+    <a class="pub-action pub-read" href="{{ paper.url | escape }}"
+      >Read
+      {% if paper.kind == 'thesis' -%}
+        thesis
+      {%- elsif paper.kind == 'preprint' -%}
+        preprint
+      {%- elsif paper.kind == 'abstract' -%}
+        abstract
+      {%- else -%}
+        paper
+      {%- endif %}
+      <span aria-hidden="true">↗</span></a
+    >
+    {% if paper.pdf != '' -%}
+      <a class="pub-action" href="{{ paper.pdf | escape }}">PDF</a>
+    {%- elsif paper.arxiv != '' -%}
+      <a class="pub-action" href="https://arxiv.org/pdf/{{ paper.arxiv | escape }}">PDF</a>
+    {%- endif %}
+    {% if paper.arxiv != '' and paper.kind == 'article' -%}
+      <a class="pub-action" href="https://arxiv.org/abs/{{ paper.arxiv | escape }}">arXiv</a>
+    {%- endif %}
+    {% if paper.code != '' -%}
+      <a class="pub-action" href="{{ paper.code | escape }}">Code</a>
+    {%- endif %}
+    {% if paper.data != '' -%}
+      <a class="pub-action" href="{{ paper.data | escape }}">Data</a>
+    {%- endif %}
+    <a class="pub-permalink" href="#{{ paper.id }}" aria-label="Direct link to {{ paper.title | escape }}">#</a>
+  </div>
+  {% if paper.doi != '' -%}
+    <a class="pub-doi" href="https://doi.org/{{ paper.doi | escape }}">doi:{{ paper.doi | escape }}</a>
+  {%- endif %}
+  <details class="pub-cite" id="cite-{{ paper.id }}">
+    <summary>Cite this work <span aria-hidden="true">+</span></summary>
+    <div class="pub-cite-content">
+      <p class="pub-citation" data-citation-text>{{ paper.citation | escape }}</p>
+      <div class="pub-cite-actions">
+        <button type="button" class="pub-action" data-copy-citation>Copy citation</button>
+        <button type="button" class="pub-action" data-copy-bibtex>Copy BibTeX</button>
+        <a class="pub-action" href="{{ paper.bib_url | relative_url }}" download>Download .bib</a>
+        <a class="pub-action" href="{{ paper.ris_url | relative_url }}" download>Download .ris</a>
+      </div>
+      <pre
+        class="pub-bibtex"
+        tabindex="0"
+        aria-label="BibTeX citation for {{ paper.title | escape }}"
+        data-bibtex-text
+      >{{ paper.bibtex | escape }}</pre>
+    </div>
+  </details>
+  {% if paper.schema_json %}
+    <script type="application/ld+json">
+      {{ paper.schema_json }}
+    </script>
+  {% endif %}
+</article>
