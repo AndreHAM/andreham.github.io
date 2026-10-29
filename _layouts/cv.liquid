@@ -138,11 +138,11 @@ layout: default
     <ol class="cv-timeline cv-section-body">
       {% for degree in education %}
         <li class="cv-timeline-entry">
-          <div class="cv-entry-date">
-            {% if degree.endDate != blank -%}
+          {% if degree.endDate != blank %}
+            <div class="cv-entry-date">
               <time datetime="{{ degree.endDate | escape }}">{{ degree.endDate | escape }}</time>
-            {%- endif %}
-          </div>
+            </div>
+          {% endif %}
           <div class="cv-entry-content">
             <h3>{{ degree.studyType | escape }}</h3>
             <p class="cv-institution">

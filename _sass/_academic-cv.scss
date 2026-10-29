@@ -227,9 +227,6 @@
     list-style: none;
     font-size: 0.76rem;
     > li {
-      display: grid;
-      grid-template-columns: 3rem minmax(0, 1fr);
-      gap: 0.8rem;
       margin-top: 0.8rem;
     }
     strong {
@@ -243,6 +240,8 @@
     }
   }
   .cv-funding-date {
+    display: block;
+    margin-bottom: 0.35rem;
     color: var(--cv-muted);
     font-variant-numeric: tabular-nums;
   }
@@ -252,9 +251,6 @@
     list-style: none;
   }
   .cv-timeline-entry {
-    display: grid;
-    grid-template-columns: 7rem minmax(0, 1fr);
-    gap: 1.1rem;
     margin-bottom: 1.7rem;
     &:last-child {
       margin-bottom: 0;
@@ -262,7 +258,7 @@
   }
   .cv-entry-date {
     white-space: nowrap;
-    padding-top: 0.1rem;
+    margin-bottom: 0.35rem;
     color: var(--cv-muted);
     font-size: 0.8rem;
     font-variant-numeric: tabular-nums;
@@ -439,10 +435,6 @@
     .cv-archive-link {
       margin: 0 0 0 auto;
     }
-    .cv-timeline-entry {
-      grid-template-columns: 7rem minmax(0, 1fr);
-      gap: 0.8rem;
-    }
     .cv-project {
       padding: 1.1rem;
       h3 {
@@ -451,10 +443,6 @@
     }
   }
   @media (max-width: 400px) {
-    .cv-timeline-entry {
-      grid-template-columns: minmax(0, 1fr);
-      gap: 0.35rem;
-    }
     .cv-project-topline {
       flex-wrap: wrap;
       gap: 0.4rem;
@@ -568,8 +556,6 @@
       display: none;
     }
     .cv-timeline-entry {
-      grid-template-columns: 6rem minmax(0, 1fr);
-      gap: 0.7rem;
       margin-bottom: 1rem;
       break-inside: avoid;
     }
