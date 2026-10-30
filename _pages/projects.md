@@ -75,6 +75,8 @@ nav_order: 2
     </div>
   </section>
 
+{% include selected-talks.liquid %}
+
   <div class="research-connect">
     <p>Interested in a shared research question?</p>
     <a class="site-button" href="mailto:andrehamalavazi@gmail.com">Discuss a collaboration <span aria-hidden="true">↗</span></a>

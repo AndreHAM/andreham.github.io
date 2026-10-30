@@ -75,6 +75,12 @@ body > .container[role="main"] {
   flex: 1 0 auto;
   width: 100%;
   padding-bottom: 1rem;
+  p,
+  li {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
 }
 body > header {
   flex-shrink: 0;
@@ -252,7 +258,8 @@ progress::-moz-progress-bar {
     font-weight: 600;
   }
   .text-justify {
-    text-align: left !important;
+    text-align: justify !important;
+    hyphens: auto;
   }
   .research-accent {
     color: var(--global-theme-color);

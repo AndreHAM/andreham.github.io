@@ -210,6 +210,126 @@
     font-size: 0.73rem;
     margin-left: 0.35rem;
   }
+  .research-talks {
+    padding: 2.5rem 0;
+    border-bottom: 1px solid var(--site-border);
+    scroll-margin-top: 6rem;
+    > .section-eyebrow {
+      margin-bottom: 0.65rem;
+    }
+    h2 {
+      border: 0;
+      padding: 0;
+      margin: 0 0 0.75rem;
+      font-size: 1.85rem;
+    }
+  }
+  .talks-intro {
+    max-width: 42rem;
+    color: var(--global-text-color-light);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+  .talk-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.15rem;
+    margin-top: 1.5rem;
+  }
+  .talk-card {
+    --talk-accent: var(--site-blue);
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 1.35rem;
+    border: 1px solid var(--site-border);
+    border-top: 3px solid var(--talk-accent);
+    border-radius: 12px;
+    background: var(--site-surface-blue);
+    &:nth-child(even) {
+      --talk-accent: var(--global-theme-color);
+      background: var(--site-surface-soft);
+    }
+    h3 {
+      color: var(--global-text-color);
+      font-family: var(--site-serif);
+      font-size: 1.5rem;
+      font-weight: 400;
+      letter-spacing: -0.025em;
+      line-height: 1.35;
+      margin: 0 0 0.65rem;
+    }
+  }
+  .talk-card-topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    color: var(--global-text-color-light);
+    font-size: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 1.1rem;
+  }
+  .talk-language {
+    padding: 0.2rem 0.55rem;
+    border: 1px solid var(--site-border);
+    border-radius: 20px;
+    color: var(--global-text-color);
+    background: var(--site-surface);
+    font-size: 0.68rem;
+    line-height: 1.5;
+  }
+  .talk-subtitle {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 0.9rem;
+  }
+  .talk-event {
+    color: var(--global-text-color-light);
+    font-size: 0.76rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  .talk-card .talk-description {
+    font-size: 0.86rem;
+    line-height: 1.75;
+    margin: 0 0 1.5rem;
+  }
+  .talk-card-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem 1rem;
+    margin-top: auto;
+  }
+  .talk-watch {
+    color: var(--talk-accent);
+    border-color: var(--talk-accent);
+    background: var(--site-surface);
+  }
+  .talk-play {
+    width: 0.85rem;
+    height: 0.85rem;
+    flex-shrink: 0;
+  }
+  .talk-supporting-link {
+    font-size: 0.74rem;
+  }
+  .talk-card .talk-start-note {
+    color: var(--global-text-color-light);
+    font-size: 0.71rem;
+    line-height: 1.6;
+    margin: 0.9rem 0 0;
+  }
+  @media (max-width: 700px) {
+    .talk-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .talk-card {
+      padding: 1.15rem;
+    }
+  }
   .research-connect {
     display: flex;
     align-items: center;

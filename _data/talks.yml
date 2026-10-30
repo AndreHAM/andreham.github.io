@@ -1,0 +1,26 @@
+# Shared by Research and the short CV. Recording links start at the speaker's introduction.
+- id: quantum-power-plant-2026
+  date: "2026-10-15"
+  title: Quantum power plant
+  subtitle: Thermally-driven, autonomous charging of cQED cavity states and their utilization
+  title_language: en
+  event: VI Workshop em Termodinâmica e Informação Quântica
+  event_short: VI Workshop TIQ
+  language: English
+  description: An autonomous engine–refrigerator architecture that stores useful energy in a superconducting resonator and uses it to cool and reset a qubit.
+  recording_url: https://www.youtube.com/watch?v=SBZjzhZ4lBE&t=31s
+  start_label: "00:31"
+  programme_url: https://sites.google.com/view/vi-workshop-termodinmica-e-inf/programa%C3%A7%C3%A3o
+
+- id: internal-energy-2023
+  date: "2023-10-20"
+  title: Definindo a energia interna de sistemas quânticos interagentes
+  title_language: pt-BR
+  event: III Workshop em Termodinâmica e Informação Quântica
+  event_short: III Workshop TIQ
+  language: Portuguese
+  description: A Schmidt-decomposition approach to defining local internal energies and describing energy exchange in interacting quantum systems.
+  recording_url: https://www.youtube.com/watch?v=ED3zunjScs8&t=7834s
+  start_label: "2:10:34"
+  programme_url: https://sites.google.com/view/iiiworkshop-tiq/programa%C3%A7%C3%A3o
+  paper_url: https://doi.org/10.3390/e24111645

@@ -6,6 +6,7 @@ layout: default
 {% assign current_grant = resume.grants | first %}
 {% assign education = resume.education | reverse %}
 {% assign recent_papers = site.data.publication_catalog.items | where: 'kind', 'article' %}
+{% assign selected_talks = site.data.talks | sort: 'date' | reverse %}
 <article class="academic-cv" aria-labelledby="cv-name">
   <header class="cv-hero">
     <p class="cv-eyebrow">Short curriculum vitae</p>
@@ -50,6 +51,9 @@ layout: default
     {% if recent_papers.size > 0 -%}
       <a href="#cv-publications">Publications</a>
     {%- endif %}
+    {% if selected_talks.size > 0 %}
+      <a href="#cv-talks">Presentations</a>
+    {% endif %}
     <a href="#awards">Recognition</a>
   </nav>
 
@@ -192,10 +196,11 @@ layout: default
     </div>
   </section>
 
+  {% assign next_section_number = 5 %}
   {% if recent_papers.size > 0 %}
     <section class="cv-section" id="cv-publications" aria-labelledby="cv-publications-title">
       <div class="cv-section-heading">
-        <span class="cv-section-number" aria-hidden="true">05</span>
+        <span class="cv-section-number" aria-hidden="true">0{{ next_section_number }}</span>
         <h2 id="cv-publications-title">
           Recent<br>
           publications
@@ -219,13 +224,43 @@ layout: default
         {% endfor %}
       </ol>
     </section>
+    {% assign next_section_number = next_section_number | plus: 1 %}
+  {% endif %}
+
+  {% if selected_talks.size > 0 %}
+    <section class="cv-section" id="cv-talks" aria-labelledby="cv-talks-title">
+      <div class="cv-section-heading">
+        <span class="cv-section-number" aria-hidden="true">0{{ next_section_number }}</span>
+        <h2 id="cv-talks-title">Selected presentations</h2>
+        <a class="cv-archive-link" href="{{ '/research/#selected-talks' | relative_url }}">Talk recordings <span aria-hidden="true">↗</span></a>
+      </div>
+      <ol class="cv-timeline cv-section-body">
+        {% for talk in selected_talks %}
+          <li class="cv-timeline-entry">
+            <div class="cv-entry-date">
+              <time datetime="{{ talk.date | escape }}">{{ talk.date | date: '%-d %b %Y' }}</time>
+            </div>
+            <div class="cv-entry-content">
+              <h3 lang="{{ talk.title_language | escape }}">{{ talk.title | escape }}</h3>
+              {% if talk.subtitle %}
+                <p>{{ talk.subtitle | escape }}</p>
+              {% endif %}
+              <p class="cv-institution">{{ talk.event | escape }} · {{ talk.language | escape }}</p>
+              <p class="cv-secondary">
+                <a href="{{ talk.recording_url | escape }}">Watch recording <span aria-hidden="true">↗</span></a>
+                · <a href="{{ talk.programme_url | escape }}">Event programme <span aria-hidden="true">↗</span></a>
+              </p>
+            </div>
+          </li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% assign next_section_number = next_section_number | plus: 1 %}
   {% endif %}
 
   <section class="cv-section" id="awards" aria-labelledby="cv-recognition-title">
     <div class="cv-section-heading">
-      <span class="cv-section-number" aria-hidden="true">
-        {%- if recent_papers.size > 0 %}06{% else %}05{% endif -%}
-      </span>
+      <span class="cv-section-number" aria-hidden="true">0{{ next_section_number }}</span>
       <h2 id="cv-recognition-title">Recognition</h2>
     </div>
     <ol class="cv-timeline cv-section-body">

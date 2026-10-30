@@ -1,0 +1,45 @@
+{% assign selected_talks = site.data.talks | sort: 'date' | reverse %}
+{% if selected_talks.size > 0 %}
+  <section class="research-talks" id="selected-talks" aria-labelledby="selected-talks-title">
+    <p class="section-eyebrow">04 · Recorded presentations</p>
+    <h2 id="selected-talks-title">Selected talks</h2>
+    <p class="talks-intro">Recorded presentations on autonomous quantum machines and the thermodynamics of interacting systems.</p>
+    <div class="talk-grid">
+      {% for talk in selected_talks %}
+        <article class="talk-card" id="talk-{{ talk.id | escape }}" aria-labelledby="talk-title-{{ talk.id | escape }}">
+          <div class="talk-card-topline">
+            <time datetime="{{ talk.date | escape }}">{{ talk.date | date: '%-d %b %Y' }}</time>
+            <span class="talk-language">{{ talk.language | escape }}</span>
+          </div>
+          <h3 id="talk-title-{{ talk.id | escape }}" lang="{{ talk.title_language | escape }}">{{ talk.title | escape }}</h3>
+          {% if talk.subtitle %}
+            <p class="talk-subtitle">{{ talk.subtitle | escape }}</p>
+          {% endif %}
+          <p class="talk-event">{{ talk.event | escape }}</p>
+          <p class="talk-description">{{ talk.description | escape }}</p>
+          <div class="talk-card-actions">
+            <a
+              class="site-button talk-watch"
+              href="{{ talk.recording_url | escape }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Watch {{ talk.title | escape }} on YouTube, starting at {{ talk.start_label | escape }} (opens in a new tab)"
+            >
+              <svg class="talk-play" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M4 2.5v11L13 8z" fill="currentColor" />
+              </svg>
+              Watch talk <span aria-hidden="true">↗</span>
+            </a>
+            <a class="talk-supporting-link" href="{{ talk.programme_url | escape }}" target="_blank" rel="noopener noreferrer">
+              Event programme <span aria-hidden="true">↗</span>
+            </a>
+            {% if talk.paper_url %}
+              <a class="talk-supporting-link" href="{{ talk.paper_url | escape }}">Related paper <span aria-hidden="true">↗</span></a>
+            {% endif %}
+          </div>
+          <p class="talk-start-note">Starts at {{ talk.start_label | escape }} in the workshop recording.</p>
+        </article>
+      {% endfor %}
+    </div>
+  </section>
+{% endif %}

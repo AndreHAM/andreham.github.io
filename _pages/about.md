@@ -35,7 +35,7 @@ I am based at the [International Centre for Theory of Quantum Technologies](http
 
 ## Research
 
-My research focuses on quantum energy storage, heat-flow control and local energetics. I combine analytical models and numerical simulations to explore how interactions and the environment shape quantum thermal devices. Explore my [research directions and contributions](/research/).
+My research focuses on quantum energy storage, heat-flow control and local energetics. I combine analytical models and numerical simulations to explore how interactions and the environment shape quantum thermal devices. Explore my [research directions and contributions](/research/) or watch [selected talks](/research/#selected-talks).
 
 ## Collaborate
 
